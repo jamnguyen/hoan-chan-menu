@@ -11,7 +11,7 @@ function App() {
   const [ data, setData ] = React.useState();
 
   React.useEffect(() => {
-    fetch('/data.json').then(res => res.json()).then(res => setData(res));
+    fetch('https://my-json-server.typicode.com/jamnguyen/hoan-chan-menu').then(res => res.json()).then(res => setData(res));
   }, []);
 
   if (!data) {
