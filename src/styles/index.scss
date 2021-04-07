@@ -1,0 +1,17 @@
+@import './Card.scss';
+@import './Dishes.scss';
+@import './Sign.scss';
+@import './Special.scss';
+
+.credit {
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  .credit {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "brand": "Thuận Ký Mỳ Gia",
+  "brand_credit": "Tập đoàn Thuận Ký",
+  "contact": {
+    "address": "26 Huỳnh Khương Ninh, Đa Kao, Quận 1",
+    "phone": "0938.100.487"
+  },
+  "dishes": [
+    {
+      "name": "Mì / Hủ tiếu thập cẩm",
+      "price": 100000
+    },
+    {
+      "name": "Mì / Hủ tiếu xá xíu",
+      "price": 100000
+    },
+    {
+      "name": "Mì / Hủ tiếu thịt nạc",
+      "price": 100000
+    },
+    {
+      "name": "Mì / Hủ tiếu thịt bằm",
+      "price": 100000
+    },
+    {
+      "name": "Mì / Hủ tiếu xương",
+      "price": 100000
+    },
+    {
+      "name": "Mì / Hủ tiếu cật",
+      "price": 100000
+    },
+    {
+      "name": "Mì / Hủ tiếu phèo",
+      "price": 100000
+    },
+    {
+      "name": "Mì / Hủ tiếu hoành thánh",
+      "price": 100000
+    },
+    {
+      "name": "Mì / Hủ tiếu sốt dầu hào",
+      "price": 100000
+    },
+    {
+      "name": "Hoành thánh",
+      "price": 100000
+    }
+  ],
+  "special": [
+    {
+      "name": "Mì / Hủ tiếu sa tế nai",
+      "price": 200000
+    }
+  ]
+}

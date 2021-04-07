@@ -1,0 +1,37 @@
+.dishes {
+  margin-top: 2.4rem;
+
+  .dish-item {
+    color: $color-text;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8rem;
+
+    .dish-name {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-right: .8rem;
+    }
+    
+    .dot-line {
+      border-bottom: .1rem dashed $color-primary-1;
+      display: block;
+      flex: 1;
+      height: 1.8rem;
+    }
+    
+    .dish-price {
+      margin-left: .8rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .dish-item {
+      font-size: 1.4rem;
+    }
+  }
+}
