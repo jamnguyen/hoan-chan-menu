@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import './styles/index.scss';
 
 import Card from "./components/Card";
@@ -11,7 +12,14 @@ function App() {
   const [ data, setData ] = React.useState();
 
   React.useEffect(() => {
-    fetch('https://my-json-server.typicode.com/jamnguyen/hoan-chan-menu').then(res => res.json()).then(res => setData(res));
+    axios.get(
+      'https://api.jsonbin.io/v3/b/606e03249c59a9732caf1efb/latest',
+      {
+        headers: {
+          'X-Master-Key': '$2b$10$AsqVRa3W51zchTsQvvtPSeQgFiF1YY35o8oSx44H/PvTP5S/QQLFG'
+        }
+      }
+    ).then(res => setData(res.data.record));
   }, []);
 
   if (!data) {
