@@ -1,3 +1,3 @@
 ＃Thuan Ky My Gia menu
 
-Simple menu. :3
+Just a simple menu. :3
