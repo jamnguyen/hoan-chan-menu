@@ -6,25 +6,40 @@ import Card from "./components/Card";
 import Sign from "./components/Sign";
 import Dishes from './components/Dishes';
 import Special from './components/Special';
+import Loader from './components/Loader';
 
 function App() {
 
   const [ data, setData ] = React.useState();
+  const [ isFetching, setIsFetching ] = React.useState(true);
 
   React.useEffect(() => {
     axios.get(
-      'https://api.jsonbin.io/v3/b/606e03249c59a9732caf1efb/latest',
+      'https://api.jsonbin.io/v3/b/606ebade181177735ef41c59/latest',
       {
         headers: {
-          'X-Master-Key': '$2b$10$AsqVRa3W51zchTsQvvtPSeQgFiF1YY35o8oSx44H/PvTP5S/QQLFG'
+          'X-Master-Key': '$2b$10$ZWqwe9x6TfXXhI9zjenf9e0RmoG0yF/oXsZVT9xpmWzLEB8cE3anm'
         }
       }
-    ).then(res => setData(res.data.record));
+    ).then(res => {
+      setData(res.data.record);
+      setIsFetching(false);
+    });
   }, []);
+
+  if (isFetching) {
+    return (
+      <div className="App">
+        <Loader />
+      </div>
+    );
+  }
 
   if (!data) {
     return (
-      <div className="App"></div>
+      <div className="App">
+        Error. Cannot load menu. :(
+      </div>
     );
   }
 

@@ -2,8 +2,9 @@
 
 .card {
   background-color: $color-bg;
-  border: .2rem solid $color-secondary-0;
+  // border: .2rem solid $color-secondary-0;
   border-radius: 1rem;
+  box-shadow: 0 0 1.5rem rgba($color-primary-1, 1);
   padding: 3rem;
   max-width: 60rem;
   width: 90%;

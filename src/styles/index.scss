@@ -1,5 +1,6 @@
 @import './Card.scss';
 @import './Dishes.scss';
+@import './Loader.scss';
 @import './Sign.scss';
 @import './Special.scss';
 
@@ -10,7 +11,7 @@
   text-align: center;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .credit {
     font-size: 1.4rem;
   }
